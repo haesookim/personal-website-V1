@@ -9,8 +9,15 @@
 }
 
 header {
-  font-family: Helvetica;
-  text-align: center;
+    font-family: Helvetica;
+    text-align: center;
+}
+
+.headerimage{
+    width: 35px;
+    float: left;
+    align-self: center;
+    padding: 20px;
 }
 
 .content{
@@ -19,7 +26,7 @@ header {
 
 .navbar{
     overflow: hidden;
-    background-color: cadetblue;
+    background-color: aliceblue;
     font-family: nanum;
     text-align: left;
 }
@@ -58,12 +65,12 @@ header {
 }
 
 .dropcontent a{
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+     display: block;
+    text-align: left;
 }
 
 .dropdown a:hover, dropcontent{
@@ -71,51 +78,55 @@ header {
 }
 
 .navigation a:hover, .dropdown:hover{
-  color: #818181;
+    color: #818181;
 }
 
 .active{
-  background-color: teal;
-  color: white;
+    background-color: teal;
+    color: white;
 }
 
 
 .name {
-  font-family: Verdana;
-  text-decoration: none;
+    font-family: Verdana;
+    text-decoration: none;
 }
 
 h2{
-  padding-left: 25px;
+    padding-left: 25px;
+    font-family: nanum;
+    font-size: 20pt;
+    margin-left=5px;
 }
 
 h3 {
-  color: teal;
-  font-family: Helvetica;
+    color: teal;
+    font-family: Helvetica;
 }
 .content{
-  margin-top: 80px;
-  align-content: center;
-  padding: 10px 10px;
+    margin-top: 80px;
+    align-content: center;
+    padding: 10px 10px;
 }
 
 p{
-  text-align: center
-  font-family: nanum;
-  font-size: 16pt;
-  padding-left: 15px;
-  padding-right: 20px;
+    text-align: center
+    font-family: nanum;
+    font-size: 16pt;
+    padding-left: 15px;
+    padding-right: 20px;
 }
 
 
 .img{
-  float:left;
-  width: 300px;
-  padding-left: 20px;
-  padding-right: 20px;
+    float:left;
+    width: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .footer {
-  font-family: Arial;
-  font-size: 8pt;
+    font-family: Arial;
+    font-size: 8pt;
+    padding: 50px;
 }
