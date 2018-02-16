@@ -1,0 +1,121 @@
+@font-face {
+  font-family: yoonGothic;
+  src: url(./fonts/윤고딕310.ttf);
+}
+
+@font-face {
+  font-family: nanum;
+  src:url(./fonts/NanumSquareOTFRegular.otf);
+}
+
+header {
+  font-family: Helvetica;
+  text-align: center;
+}
+
+.content{
+    margin: 50px 50px
+}
+
+.navbar{
+    overflow: hidden;
+    background-color: cadetblue;
+    font-family: nanum;
+    text-align: left;
+}
+
+
+.navigation a{
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    padding : 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown{
+    text-align: right;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown, .dropbtn{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropcontent{
+    display: none;
+    position: absolute;
+    background-color: aliceblue;
+    z-index: 1;
+}
+
+.dropcontent a{
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown a:hover, dropcontent{
+    display: block;
+}
+
+.navigation a:hover, .dropdown:hover{
+  color: #818181;
+}
+
+.active{
+  background-color: teal;
+  color: white;
+}
+
+
+.name {
+  font-family: Verdana;
+  text-decoration: none;
+}
+
+h2{
+  padding-left: 25px;
+}
+
+h3 {
+  color: teal;
+  font-family: Helvetica;
+}
+.content{
+  margin-top: 80px;
+  align-content: center;
+  padding: 10px 10px;
+}
+
+p{
+  text-align: center
+  font-family: nanum;
+  font-size: 16pt;
+  padding-left: 15px;
+  padding-right: 20px;
+}
+
+
+.img{
+  float:left;
+  width: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer {
+  font-family: Arial;
+  font-size: 8pt;
+}
