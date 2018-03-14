@@ -5,44 +5,60 @@
 
 @font-face {
   font-family: nanum;
-  src:url(./fonts/NanumSquareOTFRegular.otf);
+  src:url(./fonts/NanumBarunGothicLight.otf);
 }
 
 header {
-    font-family: Helvetica;
-    text-align: center;
+    overflow: hidden;
+    background-color: aliceblue;
+    font-family: nanum;
+    padding: 20px;
+}
+
+header a{
+    text-decoration: none;
+    text-decoration-color: darkgrey;
 }
 
 .headerimage{
     width: 35px;
-    float: left;
     align-self: center;
-    padding: 20px;
+    margin: auto;
+    position: relative;
+    float:left;
+    padding:15px;
+
+}
+
+.contentbox{
+    font-size: 18px;
+    background-image: url(./images/about.jpg);
+    background-color: #cccccc;
+    width: 150px;
+    padding: 40px 40px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
 }
 
 .content{
     margin: 50px 50px
 }
 
-.navbar{
-    overflow: hidden;
-    background-color: aliceblue;
-    font-family: nanum;
-    text-align: left;
+.navigation{
+    padding-top: 30px;
+    text-align: right;
 }
 
 
 .navigation a{
-    float: left;
     font-size: 16px;
-    text-align: center;
     padding : 14px 16px;
     text-decoration: none;
 }
 
 .dropdown{
-    text-align: right;
-    float: left;
+    float
     overflow: hidden;
     position: relative;
     display: inline-block;
@@ -60,7 +76,7 @@ header {
 .dropcontent{
     display: none;
     position: absolute;
-    background-color: aliceblue;
+    background-color: floralwhite;
     z-index: 1;
 }
 
@@ -69,7 +85,7 @@ header {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
-     display: block;
+    display: block;
     text-align: left;
 }
 
@@ -93,16 +109,13 @@ header {
 }
 
 h2{
-    padding-left: 25px;
     font-family: nanum;
     font-size: 20pt;
     margin-left=5px;
+    text-decoration: none;
 }
 
-h3 {
-    color: teal;
-    font-family: Helvetica;
-}
+
 .content{
     margin-top: 80px;
     align-content: center;
@@ -110,11 +123,12 @@ h3 {
 }
 
 p{
-    text-align: center
+    text-align: center;
     font-family: nanum;
-    font-size: 16pt;
-    padding-left: 15px;
+    font-size: 12pt;
+    padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 100
 }
 
 
