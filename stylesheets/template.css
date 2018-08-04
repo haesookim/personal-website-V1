@@ -1,11 +1,19 @@
 @font-face {
-  font-family: yoonGothic;
-  src: url(./fonts/윤고딕310.ttf);
+  font-family: 'Nanum Square';
+  src: url('./fonts/NanumSquareOTFRegular.ttf');
+  font-weight: Regular;
 }
 
 @font-face {
-  font-family: nanum;
-  src:url(./fonts/NanumBarunGothicLight.otf);
+  font-family: 'Nanum Square';
+  src: url('./fonts/NanumSquareOTFBold.ttf');
+  font-weight: Bold;
+}
+
+@font-face {
+  font-family: 'Nanum Square';
+  src: url('./fonts/NanumSquareOTFExtraBold.ttf');
+  font-weight: Extrabold;
 }
 
 header {
