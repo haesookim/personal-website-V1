@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 @font-face {
   font-family: 'Nanum Square';
   src: url('./fonts/NanumSquareOTFRegular.ttf');
@@ -16,139 +21,58 @@
   font-weight: Extrabold;
 }
 
+/*header and navbar designs*/
 header {
-    overflow: hidden;
-    background-color: aliceblue;
-    font-family: nanum;
-    padding: 20px;
-}
-
-header a{
-    text-decoration: none;
-    text-decoration-color: darkgrey;
-}
-
-.headerimage{
-    width: 35px;
-    align-self: center;
-    margin: auto;
-    position: relative;
-    float:left;
-    padding:15px;
-
-}
-
-.contentbox{
-    font-size: 18px;
-    background-image: url(./images/about.jpg);
-    background-color: #cccccc;
-    width: 150px;
-    padding: 40px 40px;
-    margin: auto;
-    margin-top: 50px;
-    text-align: center;
-}
-
-.content{
-    margin: 50px 50px
+  overflow: hidden;
+  background-color: rgba();
+  padding: 20px;
 }
 
 .navigation{
-    padding-top: 30px;
-    text-align: right;
+  padding-top: 30px;
+  text-align: right;
 }
 
 
 .navigation a{
-    font-size: 16px;
-    padding : 14px 16px;
-    text-decoration: none;
+  font-size: 16px;
+  padding : 14px 16px;
+  text-decoration: none;
+  font-family: 'Nanum Square', Bold;
+  color: #fff;
 }
 
-.dropdown{
-    float
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
+.navigation a:hover, {
+  color: #818181;
 }
 
-.dropdown, .dropbtn{
-    font-size: 16px;
-    border: none;
-    outline: none;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
+/*main content designs*/
+.intro-box{
+  width = 100%;
+  height = 100%;
+  background-image: url("../images/main_image.jpeg")
 }
 
-.dropcontent{
-    display: none;
-    position: absolute;
-    background-color: floralwhite;
-    z-index: 1;
-}
-
-.dropcontent a{
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown a:hover, dropcontent{
-    display: block;
-}
-
-.navigation a:hover, .dropdown:hover{
-    color: #818181;
-}
-
-.active{
-    background-color: teal;
-    color: white;
-}
-
-
-.name {
-    font-family: Verdana;
-    text-decoration: none;
+h1{
+  font-family: 'Hind', Bold;
+  color: #fff
 }
 
 h2{
-    font-family: nanum;
-    font-size: 20pt;
-    margin-left=5px;
-    text-decoration: none;
+  font-family: 'Nanum Square', Extrabold;
+  font-size: 20pt;
+  color: #fff
 }
 
-
-.content{
-    margin-top: 80px;
-    align-content: center;
-    padding: 10px 10px;
-}
 
 p{
-    text-align: center;
-    font-family: nanum;
-    font-size: 12pt;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 100
-}
-
-
-.img{
-    float:left;
-    width: 300px;
-    padding-left: 20px;
-    padding-right: 20px;
+  font-family: 'Nanum Square';
+  font-size: 12pt;
 }
 
 .footer {
-    font-family: Arial;
-    font-size: 8pt;
-    padding: 50px;
+  text-align: center;
+  font-family: 'Nanum Square';
+  font-size: 8pt;
+  padding: 50px;
 }
