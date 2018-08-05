@@ -21,49 +21,71 @@
   font-weight: Extrabold;
 }
 
+body{
+  background-color: antiquewhite;
+}
+
 /*header and navbar designs*/
 header {
   overflow: hidden;
-  background-color: rgba();
-  padding: 20px;
+  background-color: rgba(0,0,0,0.7);
+  padding: 15px;
 }
 
 .navigation{
-  padding-top: 30px;
   text-align: right;
 }
 
-
 .navigation a{
-  font-size: 16px;
-  padding : 14px 16px;
+  font-size: 15px;
+  padding : 10px;
   text-decoration: none;
   font-family: 'Nanum Square', Bold;
   color: #fff;
 }
 
-.navigation a:hover, {
+.navigation a:hover {
   color: #818181;
 }
 
 /*main content designs*/
-.intro-box{
-  width = 100%;
-  height = 100%;
-  background-image: url("../images/main_image.jpeg")
+
+/*introbox design*/
+.content{
+  position: static;
+  display: block;
+  margin: 0 auto;
+}
+
+.main-background{
+  z-index: 0;
+  position: absolute;
+  color: rgba(0,0,0,0.3);
+  height: 800px;
+}
+
+.intro-name{
+  z-index: 10;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  margin-top: 40%;
 }
 
 h1{
-  font-family: 'Hind', Bold;
+  font-family: 'Hind';
   color: #fff
 }
 
 h2{
-  font-family: 'Nanum Square', Extrabold;
-  font-size: 20pt;
+  font-family: 'Nanum Square', Regular;
   color: #fff
 }
 
+.intro-message{
+  position: relative;
+  top: 500px;
+}
 
 p{
   font-family: 'Nanum Square';
