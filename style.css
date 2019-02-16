@@ -5,20 +5,26 @@
 
 @font-face {
   font-family: 'Nanum Square';
-  src: url('./fonts/NanumSquareOTFRegular.ttf');
+  src: url('./fonts/NanumSquareOTFRegular.otf');
   font-weight: Regular;
 }
 
 @font-face {
   font-family: 'Nanum Square';
-  src: url('./fonts/NanumSquareOTFBold.ttf');
+  src: url('./fonts/NanumSquareOTFBold.otf');
   font-weight: Bold;
 }
 
 @font-face {
   font-family: 'Nanum Square';
-  src: url('./fonts/NanumSquareOTFExtraBold.ttf');
+  src: url('./fonts/NanumSquareOTFExtraBold.otf');
   font-weight: Extrabold;
+}
+
+@font-face {
+  font-family: 'Nanum Square';
+  src: url('./fonts/NanumSquareOTFLight.otf');
+  font-weight: Light;
 }
 
 body{
@@ -34,6 +40,7 @@ header {
 
 .navigation{
   text-align: right;
+  float: right;
 }
 
 .navigation a{
@@ -48,50 +55,78 @@ header {
   color: #818181;
 }
 
-/*main content designs*/
-
-/*introbox design*/
+/*main content*/
 .content{
   position: static;
   display: block;
   margin: 0 auto;
 }
 
-.main-background{
+/*introbox*/
+.intro{
+  margin-left:auto;
+  margin-right:auto;
+}
+/*.main-background{
   z-index: 0;
   position: absolute;
   color: rgba(0,0,0,0.3);
   height: 800px;
-}
+}*/
 
 .intro-name{
-  z-index: 10;
   width: 100%;
   position: absolute;
   text-align: center;
-  padding-top: 40%;
 }
 
 h1{
   font-family: 'Hind';
-  color: #fff
+  color: #000000
 }
 
 h2{
   font-family: 'Nanum Square', Regular;
-  color: #fff
+  color: #000000
 }
 
 .intro-message{
+  margin-left:auto;
+  margin-right:auto;
   position: relative;
-  top: 500px;
-}
-
-p{
-  font-family: 'Nanum Square';
+  font-family: 'Nanum Square', Regular;
   font-size: 12pt;
+  text-align: left;
 }
 
+/*portfolio lists*/
+
+.portfolio-list{
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.portfolio-title{
+  margin-left:auto;
+  margin-right:auto;
+  text-align: center;
+  color: #000000;
+  font-size: 15pt;
+  font-family: 'Nanum Square', Regular;
+}
+
+.portfolio-subtitle{
+  margin-left:auto;
+  margin-right:auto;
+  text-align: center;
+  color: #000000;
+  font-size: 12pt;
+  font-family: 'Nanum Square', Light;
+}
+
+/*contact*/
+
+/*footer*/
 .footer {
   text-align: center;
   font-family: 'Nanum Square';
