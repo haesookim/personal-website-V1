@@ -132,7 +132,7 @@ h2{
   margin: 10px auto;
 }
 
-.portfolio .title{
+.portfolio-list .title{
   margin: 10px auto;
   text-align: center;
   color: #424242;
@@ -140,7 +140,7 @@ h2{
   font-family: 'NSRegular';
 }
 
-.portfolio .subtitle{
+.portfolio-list .subtitle{
   margin: 10px auto;
   text-align: center;
   color: #797979;
@@ -148,17 +148,62 @@ h2{
   font-family: 'NSLight';
 }
 
-.portfolio .item{
-  height: 300px;
-  width: 300px;
+.portfolio-list .abstract .item{
+  height: 200px;
+  width: 200px;
   margin: 15px;
+  background-color: rgba(0,0,0,0.3);
+  -webkit-transition: background-color 0.6s; /* Safari */
+  transition: background-color 0.6s;
 }
 
-.portfolio-item-title
+.portfolio-list .abstract .item:hover{
+  background-color: rgba(0,0,0,0.8);
+}
+
+.portfolio-list .abstract .item:hover .item-name{
+  display:none;
+}
+
+.portfolio-list .abstract .item:hover .item-description{
+  display:flex;
+}
+
+.portfolio-list .abstract .item .item-name{
+  font-family: "NSRegular";
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  width: fit-content;
+  height: inherit;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  -webkit-transition: display 0.6s; /* Safari */
+  transition: display 0.6s;
+}
+
+.portfolio-list .abstract .item .item-description{
+  font-family: "NSRegular";
+  font-size: 18px;
+  padding: 0px 20px;
+  color: white;
+  text-align: center;
+  height: inherit;
+  margin: auto;
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+
+  -webkit-transition: display 0.6s; /* Safari */
+  transition: display 0.6s;
+}
 
 /*footer*/
 .footer {
-  margin: 50px auto;
+  margin: 50px auto 0 auto;
   text-align: center;
   font-family: 'NSRegular';
   font-size: 8pt;
