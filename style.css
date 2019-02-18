@@ -58,29 +58,36 @@ header {
   position: static;
   display: block;
   margin: 0 auto;
+  width: 70%;
 }
 
 /*introbox*/
 .intro{
-  margin-left:auto;
-  margin-right:auto;
-  width: 70%;
+  margin : 30px auto 50px auto;
+  padding: 0px 30px;
+  height: auto;
 }
-/*.main-background{
-  z-index: 0;
-  position: absolute;
-  color: rgba(0,0,0,0.3);
-  height: 800px;
-}*/
 
 h1{
-  font-family: 'Hind';
-  color: #000000
+  font-family: 'NSLight';
+  color: #000000;
+  margin-top: 15px;
 }
 
 h2{
-  font-family: 'NSRegular';
-  color: #000000
+  font-family: 'NSLight';
+  color: #cdcdcd;
+  font-size: 17pt;
+}
+
+.intro-photo{
+  height: 270px;
+  width: 270px;
+  margin: 0px 30px 0px 0px;
+  background-image: url("images/main_image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .intro-message{
@@ -95,13 +102,11 @@ h2{
 /*portfolio lists*/
 
 .portfolio-list{
-  margin-left:auto;
-  margin-right:auto;
+  margin: 10px auto;
 }
 
 .portfolio-title{
-  margin-left:auto;
-  margin-right:auto;
+  margin: 10px auto;
   text-align: center;
   color: #424242;
   font-size: 15pt;
@@ -109,8 +114,7 @@ h2{
 }
 
 .portfolio-subtitle{
-  margin-left:auto;
-  margin-right:auto;
+  margin: 10px auto;
   text-align: center;
   color: #797979;
   font-size: 12pt;
