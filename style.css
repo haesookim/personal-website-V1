@@ -132,7 +132,7 @@ h2{
   margin: 10px auto;
 }
 
-.portfolio-title{
+.portfolio .title{
   margin: 10px auto;
   text-align: center;
   color: #424242;
@@ -140,7 +140,7 @@ h2{
   font-family: 'NSRegular';
 }
 
-.portfolio-subtitle{
+.portfolio .subtitle{
   margin: 10px auto;
   text-align: center;
   color: #797979;
@@ -148,12 +148,21 @@ h2{
   font-family: 'NSLight';
 }
 
+.portfolio .item{
+  height: 300px;
+  width: 300px;
+  margin: 15px;
+}
+
+.portfolio-item-title
+
 /*footer*/
 .footer {
   margin: 50px auto;
   text-align: center;
   font-family: 'NSRegular';
   font-size: 8pt;
+  background-color:rgb(93, 128, 158);
 }
 
 /*contact*/
