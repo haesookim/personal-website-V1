@@ -126,7 +126,7 @@ h2{
   text-align: left;
 }
 
-/*portfolio lists*/
+/*index portfolio lists*/
 
 .portfolio-list{
   margin: 30px auto;
@@ -223,3 +223,24 @@ h2{
   text-align: center;
 }
 
+/*portfolio.html page*/
+
+.tag-button button{
+  width: 100px;
+  height:40px;
+  text-align: center;
+  font-size: 14px;
+  margin: 10px;
+}
+
+.hidden{
+  display: none;
+}
+
+.portfolio-container .item{
+  width: 200px;
+  height: 300px;
+  border: 1px solid black;
+  margin: 15px;
+  float: left;
+}

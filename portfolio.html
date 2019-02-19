@@ -1,11 +1,100 @@
-<div class="content">
+<html>
 
-  <div class="intro-message" id="portfolio">
-    <p>I have worked in the realization of various projects in the past, the fields ranging from Game Development to Machine Learning Research.</p>
-    <p>Here's an iteniary of the projects that I've done.</p>
+<head>
+  <title>Haesoo Heather Kim :: Main</title>
+  <meta charset="utf-8" />
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hind:700" rel="stylesheet">
+</head>
+
+<body>
+  <!--insert header-->
+
+  <div class="content">
+    <div class="intro-message" id="portfolio">
+      <p>I have worked in the realization of various projects in the past, the fields ranging from Game Development to
+        Machine Learning Research.</p>
+      <p>Here's an iteniary of the projects that I've done.</p>
+    </div>
+
+    <div class="button-container">
+      <div class="search"></div>
+      <div class="tag-button">
+        <button class="tag" id="all" onclick="filterSelection('all')">Show all</button>
+        <button class="tag" id="game" onclick="filterSelection('game')">Game</button>
+        <button class="tag" id="web-design" onclick="filterSelection('web-design')">Web Design</button>
+      </div>
+    </div>
+
+    <div class="portfolio-container">
+      <div class="item game">
+        <div class="image"></div>
+        <div class="title">Dummy Stuff</div>
+        <div class="description"></div>
+
+        <div class="tag-container">
+          <div class="tag-item">Game</div>
+        </div>
+      </div>
+
+      <div class="item web-design">
+        <div class="image"></div>
+        <div class="title">Dummy Stuff</div>
+        <div class="description"></div>
+
+        <div class="tag-container">
+          <div class="tag-item">web-design</div>
+        </div>
+      </div>
+
+      <div class="item web-design">
+        <div class="image"></div>
+        <div class="title">Dummy Stuff</div>
+        <div class="description"></div>
+
+        <div class="tag-container">
+          <div class="tag-item">web-design</div>
+        </div>
+      </div>
+
+      <div class="item game">
+        <div class="image"></div>
+        <div class="title">Dummy Stuff</div>
+        <div class="description"></div>
+
+        <div class="tag-container">
+          <div class="tag-item">Game</div>
+        </div>
+      </div>
+
+      <div class="item web-design">
+        <div class="image"></div>
+        <div class="title">Dummy Stuff</div>
+        <div class="description"></div>
+
+        <div class="tag-container">
+          <div class="tag-item">web-design</div>
+        </div>
+      </div>
+
+      <div class="item game">
+        <div class="image"></div>
+        <div class="title">Dummy Stuff</div>
+        <div class="description"></div>
+
+        <div class="tag-container">
+          <div class="tag-item">Game</div>
+        </div>
+      </div>
+    </div>
+
+    <!--implement a 'search'/'menu' function using tags on the projects: use visible() and hide() methods by css?-->
+    <!--add projects with captions and tags, layout in gallery format-->
+    <!--clicking on item will summon a close up tooltip window where you can arrow key through the rest of the projects-->
   </div>
 
-  <!--implement a 'search'/'menu' function using tags on the projects: use visible() and hide() methods by css?-->
-  <!--add projects with captions and tags, layout in gallery format-->
-  <!--clicking on item will summon a close up tooltip window where you can arrow key through the rest of the projects-->
-</div>
+  <script type="text/javascript" src="portfolio.js"></script>
+  <!--insert footer-->
+</body>
+
+</html>
