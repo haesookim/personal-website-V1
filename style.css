@@ -97,7 +97,7 @@ h2{
 }
 
 /*main content*/
-.content{
+main{
   position: static;
   display: block;
   margin: 0 auto;
@@ -285,4 +285,22 @@ h2{
 #web-design{
   background-color: teal;
   color: white;
+}
+
+/* art.html page */
+.gallery{
+  margin: 30px;
+  width: fit-content;
+}
+
+.gallery-art{
+  display: flex;
+  margin: 5px;
+  float: left;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  padding: 3px;
+  border: 1px solid #121212;
 }
