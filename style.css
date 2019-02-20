@@ -300,7 +300,7 @@ main{
   width: 200px;
   height: 200px;
   object-fit: contain;
-  image-rendering: pixelated;
+  image-rendering: pixelated; /*note: this only works on chrome*/
   padding: 3px;
   border: 1px solid #121212;
 }
