@@ -244,13 +244,11 @@ main{
 }
 
 .hidden{
-  -webkit-transition: all .5s ease-in-out;
+  -webkit-transition: display .5s ease-in-out;
   -moz-transition: all .5s ease-in-out;
   -o-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  width: 0; 
-  height: 0; 
-  opacity: 0;
+  display: none;
 }
 
 .portfolio-container .item{
@@ -260,6 +258,22 @@ main{
   float: left;
   background-color: rgb(214, 214, 214);
   border-radius: 10px;
+
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.portfolio-container .item .description {
+  display: none;
+  width: 270px;
+  height: 270px;
+
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .portfolio-container .item .image{
@@ -267,14 +281,20 @@ main{
   height: 270px;
   margin: 15px;
   background-color: white;
+
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
-.portfolio-container .item .title{
+.portfolio-container .item .text-container{
   margin-left: 15px;
-}
 
-.tag-container{
-  margin-left: 15px;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .tag-container .tag-item{
@@ -286,6 +306,42 @@ main{
   float: left;
   font-size: 12px;
   border-radius: 7px;
+}
+
+/* everything that changes with hover */
+
+.portfolio-container .item:hover .description{
+  display: block;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.portfolio-container .item:hover {
+  width: 310px;
+  height: 410px;
+  margin: 10px;
+
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.portfolio-container .item:hover .image{
+  margin: 20px 20px 15px 20px;
+
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.portfolio-container .item:hover .text-container{
+  margin-left: 20px;
+
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 #game{
