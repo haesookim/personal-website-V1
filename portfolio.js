@@ -4,6 +4,12 @@
 
 /* portfolio tag filtering */
 
+function activateButton(btnName) {
+    let button = document.getElementById(btnName);
+
+    button.classList.toggle("pressed");
+}
+
 function filterSelection(tag) {
     let select_pool;
     let i;
@@ -22,6 +28,7 @@ function filterSelection(tag) {
             hideSelection(select_pool[i]);
         }
     }
+    activateButton(tag);
 
 }
 
