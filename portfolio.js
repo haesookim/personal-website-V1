@@ -31,7 +31,19 @@ function createItem(title, imageSource, description, tagString){
     textContainer.appendChild(titleDiv);
     textContainer.appendChild(descriptDiv);
     textContainer.appendChild(tagDiv);
+
+    let tagArray = tagString.split(" ");
+    let i;
+    for (i = 0; i < tagArray.length ; i++){
+        let tagItem = document.createElement("div");
+        tagItem.className = "tag-item";
+        tagItem.innerHTML = tagArray[i];
+        tagItem.id = tagArray[i];
+        tagDiv.appendChild(tagItem);
+    }
 }
+
+/* coloring the tags */
 
 /* portfolio tag filtering */
 
