@@ -1,6 +1,37 @@
 /* load the portfolio instances */
 
+function createItem(title, imageSource, description, tagString){
+    let itemwrapper = document.createElement("div");
+    itemwrapper.className = "item-wrapper";
 
+    let item = document.createElement("div");
+    item.className = "item " + tagString; /* Join with spaces */
+    itemwrapper.appendChild(item);
+
+    let imageDiv = document.createElement("div");
+    imageDiv.className = "image";
+    /* append image source to imageDiv */
+    let textContainer = document.createElement("div");
+    textContainer.className = "text-container";
+
+    item.appendChild(imageDiv);
+    item.appendChild(textContainer);
+    
+    let titleDiv = document.createElement("div");
+    titleDiv.className = "title";
+    titleDiv.innerHTML = title;
+
+    let descriptDiv = document.createElement("div");
+    descriptDiv.className = "description"
+    descriptDiv.innerHTML = description;
+
+    let tagDiv = document.createElement("div");
+    tagDiv.className = "tag-container";
+
+    textContainer.appendChild(titleDiv);
+    textContainer.appendChild(descriptDiv);
+    textContainer.appendChild(tagDiv);
+}
 
 /* portfolio tag filtering */
 
