@@ -43,7 +43,26 @@ function createItem(title, imageSource, description, tagString){
     }
 }
 
-/* coloring the tags */
+/* collect and coloring the tags */
+
+var tagButtonList = [];
+
+function addTag(tagString){
+    let tagArray = tagString.split(" ");
+    let i;
+
+    for (i = 0; i < tagArray.length ; i++){
+        if (!includes(tagArray[i], tagButtonList)){
+            tagButtonList.push(tagArray[i]);
+        }
+    }
+}
+
+function includes(item, array){
+    return (array.indexOf(item) != -1);
+}
+
+/* is there a better way to do this? */
 
 /* portfolio tag filtering */
 
