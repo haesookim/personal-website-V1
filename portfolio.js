@@ -91,7 +91,6 @@ function filterSelection(tag) {
         }
     }
     activateButton(tag);
-
 }
 
 function showAll(select_pool) {

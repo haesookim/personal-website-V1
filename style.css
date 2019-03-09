@@ -28,7 +28,7 @@ body{
 /*header and navbar designs*/
 header {
   overflow: hidden;
-  background-color: rgb(93, 128, 158);
+  background-image: linear-gradient(to bottom, #30cfd0 0%, #330867 100%);
 }
 
 .nav-wrapper{
@@ -157,10 +157,19 @@ main{
   font-family: 'NSLight';
 }
 
+.portfolio-list .abstract{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
 .portfolio-list .abstract .item{
   height: 200px;
   width: 200px;
-  margin: 15px auto;
+  border-radius: 100px;
+  margin: 15px;
   background-color: rgba(0,0,0,0.3);
   -webkit-transition: background-color 0.6s; /* Safari */
   transition: background-color 0.6s;
@@ -210,18 +219,25 @@ main{
   transition: display 0.6s;
 }
 
+.portfolio-list .abstract .item .item-description a {
+  color: white;
+  text-decoration: none;
+}
+
 /*footer*/
 .footer {
   margin: 50px auto 0 auto;
+  padding-bottom: 30px;
   text-align: center;
   font-family: 'NSRegular';
-  font-size: 8pt;
-  background-color:rgb(93, 128, 158);
+  font-size: 9pt;
+  background-image: linear-gradient(to bottom, #30cfd0 0%, #330867 100%);
 }
 
 /*contact*/
 .contact{
-  margin: 0 auto 30px auto;
+  margin: 0px auto 30px auto;
+  padding-top: 30px;
   width: 50%;
   display: flex;
   justify-content: center;
@@ -304,6 +320,9 @@ main{
   height: 120px;
   margin: 15px;
   background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*.portfolio-container .item:hover .image{
@@ -318,6 +337,7 @@ main{
 .portfolio-container .item .text-container{
   margin: 15px;
   margin-left: 0;
+  width: 300px;
 }
 
 .text-container .title{
