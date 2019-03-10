@@ -1,6 +1,6 @@
 /* load the portfolio instances */
 
-function createItem(title, imageSource, description, tagString){
+function createItem(title, imageSource, description, tagString) {
     let itemwrapper = document.createElement("div");
     itemwrapper.className = "item-wrapper";
 
@@ -16,7 +16,7 @@ function createItem(title, imageSource, description, tagString){
 
     item.appendChild(imageDiv);
     item.appendChild(textContainer);
-    
+
     let titleDiv = document.createElement("div");
     titleDiv.className = "title";
     titleDiv.innerHTML = title;
@@ -34,7 +34,7 @@ function createItem(title, imageSource, description, tagString){
 
     let tagArray = tagString.split(" ");
     let i;
-    for (i = 0; i < tagArray.length ; i++){
+    for (i = 0; i < tagArray.length; i++) {
         let tagItem = document.createElement("div");
         tagItem.className = "tag-item";
         tagItem.innerHTML = tagArray[i];
@@ -47,21 +47,20 @@ function createItem(title, imageSource, description, tagString){
 
 var tagButtonList = [];
 
-function addTag(tagString){
+function addTag(tagString) {
     let tagArray = tagString.split(" ");
     let i;
 
-    for (i = 0; i < tagArray.length ; i++){
-        if (!includes(tagArray[i], tagButtonList)){
+    for (i = 0; i < tagArray.length; i++) {
+        if (!includes(tagArray[i], tagButtonList)) {
             tagButtonList.push(tagArray[i]);
         }
     }
 }
 
-function includes(item, array){
+function includes(item, array) {
     return (array.indexOf(item) != -1);
 }
-
 /* is there a better way to do this? */
 
 /* portfolio tag filtering */
@@ -73,21 +72,26 @@ function activateButton(btnName) {
 }
 
 function filterSelection(tag) {
-    let select_pool;
-    let i;
+    let select_pool = document.getElementsByClassName('item-wrapper');
 
-    select_pool = document.getElementsByClassName('item');
+    let button = document.getElementById(tag);
+    let classArray = button.className.split(" ");
 
-    if (tag == "all") {
+    if (includes("pressed", classArray)) {
         showAll(select_pool);
-        return;
-    }
+        /* remove filter */
+    } else {
+        if (tag == "all") {
+            showAll(select_pool);
+            return;
+        }
 
-    for (i = 0; i < select_pool.length; i++) {
-        if (select_pool[i].className.indexOf(tag) > -1) {
-            showSelection(select_pool[i]);
-        } else {
-            hideSelection(select_pool[i]);
+        for (i = 0; i < select_pool.length; i++) {
+            if (select_pool[i].className.indexOf(tag) > -1) {
+                showSelection(select_pool[i]);
+            } else {
+                hideSelection(select_pool[i]);
+            }
         }
     }
     activateButton(tag);
@@ -124,14 +128,12 @@ function showSelection(item) {
 
 function hideSelection(item) {
     let classArray;
-    let i;
 
     classArray = item.className.split(" ");
 
-    for (i = 0; i < classArray.length; i++) {
-        if (classArray[i] === "hidden") {
-            return;
-        }
+    if (includes("hidden", classArray)) {
+        return;
+    } else {
+        item.className = item.className + " hidden";
     }
-    item.className = item.className + " hidden";
 }
