@@ -137,3 +137,11 @@ function hideSelection(item) {
         item.className = item.className + " hidden";
     }
 }
+
+function toggleDesc(id){
+    let parent = document.querySelector("#"+id);
+    let desc = parent.querySelector(".long-description");
+
+    desc.classList.toggle("visible");
+    console.log(desc.innerHTML);
+}
