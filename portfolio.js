@@ -48,14 +48,6 @@ function createItem(title, imageSource, description, tagString) {
 var tagButtonList = [];
 
 function addTag(tagString) {
-    let tagArray = tagString.split(" ");
-    let i;
-
-    for (i = 0; i < tagArray.length; i++) {
-        if (!includes(tagArray[i], tagButtonList)) {
-            tagButtonList.push(tagArray[i]);
-        }
-    }
 }
 
 function includes(item, array) {

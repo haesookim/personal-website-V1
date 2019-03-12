@@ -292,7 +292,7 @@ main{
 .portfolio-container .item{
   width: 460px;
   height: auto;
-  margin: 10px 15px;
+  margin: 14px 15px;
   float: left;
   display: flex;
   flex-wrap: wrap;
@@ -303,11 +303,11 @@ main{
   -webkit-transition: all .5s ease-in-out;
   -moz-transition: all .5s ease-in-out;
   -o-transition: all .5s ease-in-out;
-  transition: transform .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .portfolio-container .item:hover {
-  margin-top: 2px;
+  margin-top: 3px;
   margin-bottom: 25px;
 
   -webkit-transition: all .3s ease-in-out;
@@ -326,17 +326,13 @@ main{
   background-position: center;
 }
 
-/*.portfolio-container .item:hover .image{
-  filter: brightness(0.7) ;
-
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-}*/
+.item-link{
+  font-size: 10px;
+  font-family: 'NSRegular';
+}
 
 .portfolio-container .item .text-container{
-  margin: 15px 0px;
+  margin-top: 15px;
   width: 300px;
 }
 
@@ -368,45 +364,43 @@ main{
 
 .long-description{
   font-size: 14px;
-  margin: 15px;
-  margin-top: 0px;
-  width: 460px;
+  width: 490px;
+  margin: 0 15px;
 
   max-height: 0px;
   overflow: hidden;
-  transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-out, padding 0.5s;
 }
 
 .long-description.visible{
-  /*display:block!important;*/
-  max-height: 400px;
-
-  transition: max-height 0.5s ease-in-out;
+  max-height: 400px; /*modify as necessary*/
+  padding-bottom: 15px;
+  transition: max-height 0.5s ease-in-out, padding 0.5s;
 }
 
 /* tag-item styling */
 
-.tag-item#game{
+.tag-item.game{
   background-color: green;
   color: white;
 }
 
-.tag-item#web-design{
+.tag-item.web-design{
   background-color: teal;
   color: white;
 }
 
-.tag-button .pressed#game{
+.tag-button .game.pressed{
   background-color: green;
   color: white;
 }
 
-.tag-button #game{
+.tag-button .game{
   border: 3px solid green;
   color: green;
 }
 
-.tag-button #web-design{
+.tag-button .web-design{
   border: 3px solid teal;
   color: teal;
 }
