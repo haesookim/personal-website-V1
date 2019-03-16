@@ -263,6 +263,18 @@ h2{
   box-shadow: 0 2px 5px #565656;
 }
 
+#search-input{
+  width:50%;
+  margin-left: 20px;
+  margin-top: 10px;
+  height: 20px;
+}
+
+#search-btn{
+  width: fit-content;
+  height: 25px;
+}
+
 .hidden{
   -webkit-transition: all .5s ease-in-out;
   -moz-transition: all .5s ease-in-out;

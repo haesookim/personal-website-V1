@@ -63,8 +63,9 @@ function activateButton(btnName) {
     button.classList.toggle("pressed");
 }
 
+var select_pool = document.getElementsByClassName('item-wrapper');
+
 function filterSelection(tag) {
-    let select_pool = document.getElementsByClassName('item-wrapper');
 
     let button = document.getElementById(tag);
     let classArray = button.className.split(" ");
@@ -136,4 +137,19 @@ function toggleDesc(id){
 
     desc.classList.toggle("visible");
     console.log(desc.innerHTML);
+}
+
+/* Searching for items */
+
+function searchFunction(){
+    let input = getElementById("search-input");
+
+    //fix this part as fit
+    for (i = 0; i < select_pool.length; i++) {
+        if (select_pool[i].className.indexOf(tag) > -1) {
+            showSelection(select_pool[i]);
+        } else {
+            hideSelection(select_pool[i]);
+        }
+    }
 }
