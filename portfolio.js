@@ -72,6 +72,13 @@ function filterSelection(tag) {
 
     if (includes("pressed", classArray)) {
         showAll(select_pool);
+        /* Reserve this for when I'm flipping them
+        
+        for (i = 0; i < select_pool.length; i++) {
+            if (select_pool[i].className.indexOf(tag) > -1) {
+                hideSelection(select_pool[i]);
+            }
+        }*/
         /* remove filter */
     } else {
         if (tag == "all") {
