@@ -387,30 +387,44 @@ h2{
 
 /* tag-item styling */
 
+.tag-item{
+  color:white
+}
+
 .tag-item.game{
   background-color: green;
-  color: white;
 }
 
 .tag-item.web-design{
   background-color: teal;
+}
+
+.tag-button *{
+  border: 3px solid;
+}
+
+.tag-button .game{
+  border-color:green;
+  color: green;
+}
+
+.tag-button .web-design{
+  border-color: teal;
+  color: teal;
+}
+
+.tag-button .pressed{
   color: white;
 }
 
 .tag-button .game.pressed{
   background-color: green;
-  color: white;
 }
 
-.tag-button .game{
-  border: 3px solid green;
-  color: green;
+.tag-button .web-design.pressed{
+  background-color: teal;
 }
 
-.tag-button .web-design{
-  border: 3px solid teal;
-  color: teal;
-}
 
 /* art.html page */
 .gallery{
