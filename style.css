@@ -399,6 +399,10 @@ h2{
   background-color: teal;
 }
 
+.tag-item .research{
+  background-color: navy;
+}
+
 .tag-button *{
   border: 3px solid;
 }
@@ -413,6 +417,11 @@ h2{
   color: teal;
 }
 
+.tag-button .research{
+  border-color: navy;
+  color: navy;
+}
+
 .tag-button .pressed{
   color: white;
 }
@@ -423,6 +432,10 @@ h2{
 
 .tag-button .web-design.pressed{
   background-color: teal;
+}
+
+.tag-button .research.pressed{
+  background-color: navy;
 }
 
 
