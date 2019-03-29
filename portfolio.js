@@ -57,7 +57,7 @@ function includes(item, array) {
 
 /* portfolio tag filtering */
 
-function activateButton(btnName) {
+function toggleButton(btnName) {
     let button = document.getElementById(btnName);
 
     button.classList.toggle("pressed");
@@ -69,6 +69,8 @@ function filterSelection(tag) {
 
     let button = document.getElementById(tag);
     let classArray = button.className.split(" ");
+    let allButtons = document.getElementsByClassName("pressed");
+    console.log(allButtons);
 
     if (includes("pressed", classArray)) {
         showAll(select_pool);
@@ -86,6 +88,10 @@ function filterSelection(tag) {
             return;
         }
 
+        for (let i = 0; i< allButtons.length; i++){
+            allButtons[i].classList.toggle("pressed");
+        }
+
         for (i = 0; i < select_pool.length; i++) {
             if (select_pool[i].className.indexOf(tag) > -1) {
                 showSelection(select_pool[i]);
@@ -94,7 +100,7 @@ function filterSelection(tag) {
             }
         }
     }
-    activateButton(tag);
+    toggleButton(tag);
 }
 
 function showAll(select_pool) {
