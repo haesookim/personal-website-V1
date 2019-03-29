@@ -12,20 +12,37 @@
 
 <body>
   <!--insert header-->
+  <header>
+      <div class="nav-wrapper">
+        <div class="navigation">
+          <a href="index.html" title="Home"><div class="nav-button">Home</div></a>
+          <a href="about.html" title="About"><div class="nav-button">About</div></a>
+          <a href="portfolio.html" title="Portfolio"><div class="nav-button">Portfolio</div></a>
+          <a href="art.html" title="Art"><div class="nav-button">Art</div></a>
+          <a href="activities.html" title="Activities"><div class="nav-button">Activities</div></a>
+          <!--might add activities tab just to let ppl know how hardworking I've been-->
+          <a href="CV.pdf" target="_blank" title="CV"><div class="nav-button">CV</div></a>
+        </div>
+      </div>
+    </header>
 
   <main>
     <div class="intro-message" id="portfolio">
       <p>I have worked in various projects in the past, the fields ranging from Game Development to
-        Machine Learning Research.</br> Here's an iteniary of the projects that I've worked on.</p>
+        Machine Learning Research. This is an iteniary of the projects that I've worked on.</br>
+        Click on each item to view a detailed description of each project.
+      </p>
     </div>
 
     <div class="button-container">
       <div class="search"></div>
       <div class="tag-button">
         <button id="all" onclick="filterSelection('all')">No Filter</button>
-        <button class="tag game" id="game" onclick="filterSelection('game')">Game</button>
-        <button class="tag web-design" id="web-design" onclick="filterSelection('web-design')">Web Development</button>
-        <button class="tag research" id="research" onclick="filterSelection('research')">Research</button>
+        <button class="tag" id="game" onclick="filterSelection('game')">Game</button>
+        <button class="tag" id="front-end" onclick="filterSelection('front-end')">Front End</button>
+        <button class="tag" id="research" onclick="filterSelection('research')">Research</button>
+        <button class="tag" id="datavis" onclick="filterSelection('datavis')">Data Visualization</button>
+        <button class="tag" id="pixel-art" onclick="filterSelection('pixel-art')">Pixel Art</button>
       </div>
     </div>
 
@@ -35,117 +52,122 @@
     </div>
 
     <div class="portfolio-container">
-      <div class="item-wrapper game web-design">
-        <div class="item">
-          <div class="image">
-            <!---image-->
-          </div>
-          <div class="text-container">
-            <div class="title">Dummy Stuff</div>
+      <div class="container-type">Currently Working On</div>
+      <div id="current" class="sub-container">
 
-            <div class="description"> This or that Lorem ipsum dolor</div>
-            <div class="tag-container">
-              <div class="tag-item game">Game</div>
-              <div class="tag-item web-design">web-design</div>
+        <div class="item-wrapper game front-end research">
+            <div class="item">
+              <div class="image" style="background-image: url('images/portfolio/miro.png')">
+                <!---image-->
+              </div>
+              <div class="text-container">
+                <div class="title">The Implementation of MiRO, </br>a Media-as-Place Computer Game</div>
+  
+                <div class="description"> Here, we present the idea of media-as-place, as opposed to media as representation, with an interactive computer game MiRO. (DIS 2019 Works In Progress
+                  Acceptance)</div>
+                <div class="tag-container">
+                  <div class="tag-item game">game-dev</div>
+                  <div class="tag-item front-end">front-end</div>
+                  <div class="tag-item research">research</div>
+                </div>
+              </div>
+  
+  
             </div>
-          </div>
-
-          <div class="long-description">Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this</div>
-
-        </div>
-      </div>
-
-      <div class="item-wrapper game web-design research">
-        <div class="item">
-          <div class="image" style="background-image: url('images/portfolio/miro.png')">
-            <!---image-->
-          </div>
-          <div class="text-container">
-            <div class="title">The Implementation of MiRO, </br>a Media-as-Place Computer Game</div>
-
-            <div class="description"> Media is a form of representation, but media is also the 'place' where the experience happens. We present the idea of media-as-place, with MiRO. (DIS 2019 Works In Progress Acceptance)</div>
-            <div class="tag-container">
-              <div class="tag-item game">game</div>
-              <div class="tag-item web-design">web-development</div>
-              <div class="tag-item research">research</div>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-
-      <div class="item-wrapper web-design application" id="divein" onclick="toggleDesc(this.id)">
-        <div class="item">
-          <div class="image" style="background-image: url('images/portfolio/divein.png')">
-            <!---image-->
-          </div>
-          <div class="text-container">
-            <div class="title">DIVE IN <a class="item-link" href="https://store.whale.naver.com/detail/albadkjhneheghaepimgfijhdholmbdg" target="blank" title="Whale Store" >view in store</a></div>
-
-            <div class="description"> Simple tree visualization of browser tab hierarchies. Developed to ensure organized, clean browser experience (2018 Naver Whale Extension Contest, 3rd Place)</div>
-            <div class="tag-container">
-              <div class="tag-item web-design">web-development</div>
-              <div class="tag-item application">application</div>
-            </div>
-        </div>
-
-        <div class="long-description">Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this</div>
           </div>
       </div>
 
-      <div class="item-wrapper game pixel-art">
-        <div class="item">
-          <div class="image" style="background-image: url('images/portfolio/newsims.png')">
-            <!---image-->
-          </div>
-          <div class="text-container">
-            <div class="title">OrbEat <a class="item-link" href="hhttps://play.google.com/store/apps/details?id=com.NODgames.OrbEat&fbclid=IwAR3woE4EYugNGWGh8vdOdXauMwk0cisLQWQYblWCSURzDuShmKt1zAQJdj0" target="blank" title="Play Store : OrbEat" >view in play store</a></div>
+      <div class="container-type">Past Projects</div>
+      <div id="past" class="sub-container">
 
-            <div class="description"> Concept and background art for the Rhythm-Defense Game OrbEat. Eat up all the orbs of trash before they destroy space!</div>
-            <div class="tag-container">
-              <div class="tag-item game">game</div>
-              <div class="tag-item pixel-art">pixel-art</div>
+        <div class="item-wrapper front-end application" id="divein" onclick="toggleDesc(this.id)">
+          <div class="item">
+            <div class="image" style="background-image: url('images/portfolio/divein.png')">
+              <!---image-->
+            </div>
+            <div class="text-container">
+              <div class="title">DIVE IN <a class="item-link"
+                  href="https://store.whale.naver.com/detail/albadkjhneheghaepimgfijhdholmbdg" target="blank"
+                  title="Whale Store">view in store</a></div>
+
+              <div class="description"> Simple tree visualization of browser tab hierarchies. Developed to ensure
+                organized, clean browser experience (2018 Naver Whale Extension Contest, 3rd Place)</div>
+              <div class="tag-container">
+                <div class="tag-item front-end">front-end</div>
+                <div class="tag-item application">application</div>
+              </div>
+            </div>
+
+            <div class="long-description">Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a
+              very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very
+              long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long
+              text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text
+              for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for
+              this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this
+              Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this
+              Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="item-wrapper research">
-        <div class="item">
-          <div class="image" style="background-image: url('images/portfolio/snubg.png')">
-            <!---image-->
-          </div>
-          <div class="text-container">
-            <div class="title">SNU Bamboo Visualization</div>
-
-            <div class="description"> What do college students think about? Analyzed the SNU Bamboo Grove database using the KoNLPy library and Word2Vec. (Summer 2018 HCI.D Lab internship project) </div>
-            <div class="tag-container">
-              <div class="tag-item research">research</div>
+        <div class="item-wrapper game pixel-art">
+          <div class="item">
+            <div class="image" style="background-image: url('images/portfolio/newsims.png')">
+              <!---image-->
             </div>
+            <div class="text-container">
+              <div class="title">OrbEat <a class="item-link"
+                  href="hhttps://play.google.com/store/apps/details?id=com.NODgames.OrbEat&fbclid=IwAR3woE4EYugNGWGh8vdOdXauMwk0cisLQWQYblWCSURzDuShmKt1zAQJdj0"
+                  target="blank" title="Play Store : OrbEat">view in play store</a></div>
 
-          </div>
-        </div>
-      </div>
-
-      <div class="item-wrapper game pixel-art">
-        <div class="item">
-          <div class="image" style="background-image: url('images/portfolio/newsims.png')">
-            <!---image-->
-          </div>
-          <div class="text-container">
-            <div class="title">NEWSIMS</div>
-
-            <div class="description"> In light of ‘Fake News’, the hottest term of 2018, we created a twist to the
-              classic business simulator: you’re in it for the money, and the money only. (NDM Winter 2018 Submission)</div>
-            <div class="tag-container">
-              <div class="tag-item game">game</div>
-              <div class="tag-item pixel-art">pixel-art</div>
+              <div class="description"> Concept and background art for the Rhythm-Defense Game OrbEat. Eat up all the
+                orbs of trash before they destroy space!</div>
+              <div class="tag-container">
+                <div class="tag-item game">game-dev</div>
+                <div class="tag-item pixel-art">pixel-art</div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
+        <div class="item-wrapper research datavis">
+          <div class="item">
+            <div class="image" style="background-image: url('images/portfolio/snubg.png')">
+            </div>
+            <div class="text-container">
+              <div class="title">SNU Bamboo Visualization</div>
+
+              <div class="description"> What do college students think about? Analyzed the SNU Bamboo Grove database
+                using the KoNLPy library and Word2Vec. (Summer 2018 HCI.D Lab internship project) </div>
+              <div class="tag-container">
+                <div class="tag-item research">research</div>
+                <div class="tag-item datavis">data-vis</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="item-wrapper game pixel-art">
+          <div class="item">
+            <div class="image" style="background-image: url('images/portfolio/newsims.png')">
+              <!---image-->
+            </div>
+            <div class="text-container">
+              <div class="title">NEWSIMS</div>
+
+              <div class="description"> In light of ‘Fake News’, the hottest term of 2018, we created a twist to the
+                classic business simulator: you’re in it for the money, and the money only. (NDM Winter 2018 Submission)
+              </div>
+              <div class="tag-container">
+                <div class="tag-item game">game-dev</div>
+                <div class="tag-item pixel-art">pixel-art</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
 
 

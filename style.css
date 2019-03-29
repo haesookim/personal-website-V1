@@ -76,30 +76,19 @@ main{
 /*introbox*/
 
 .intro{
-  margin : 30px auto 50px auto;
+  margin : 100px auto;
   padding: 0px 30px;
-  height: 100%;
-}
-
-.intro-photo{
-  height: 270px;
-  width: 270px;
-  margin: 0px 30px 0px 0px;
-  background-image: url("images/main_image.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .intro-message{
-  margin-left:auto;
-  margin-right:auto;
+  margin: 50px auto;
+  margin-bottom: 0;
   width: 70%;
   position: relative;
   font-family: 'NSRegular';
   font-size: 17px;
   text-align: center;
-  line-height: 20px;
+  line-height: 24px;
 }
 
 h1{
@@ -285,9 +274,19 @@ h2{
 
 .portfolio-container{
   margin: 15px auto 0 auto;
+}
+
+.container-type{
+  font-style: italic;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.sub-container{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin: 15px auto;
 }
 
 .item-wrapper{
@@ -391,53 +390,63 @@ h2{
   color:white
 }
 
-.tag-item.game{
+.tag-item.game,
+.tag-button #game.pressed{
   background-color: green;
 }
 
-.tag-item.web-design{
+.tag-item.front-end,
+.tag-button #front-end.pressed{
   background-color: teal;
 }
 
-.tag-item .research{
+.tag-item.research,
+.tag-button #research.pressed{
   background-color: navy;
+}
+
+.tag-item.datavis,
+.tag-button #datavis.pressed{
+  background-color: orange;
+}
+
+.tag-item.pixel-art,
+.tag-button #pixel-art.pressed{
+  background-color: rgb(185, 107, 120);
 }
 
 .tag-button *{
   border: 3px solid;
 }
 
-.tag-button .game{
+.tag-button #game{
   border-color:green;
   color: green;
 }
 
-.tag-button .web-design{
+.tag-button #front-end{
   border-color: teal;
   color: teal;
 }
 
-.tag-button .research{
+.tag-button #research{
   border-color: navy;
   color: navy;
 }
 
+.tag-button #datavis{
+  border-color: orange;
+  color: orange;
+}
+
+.tag-button #pixel-art{
+  border-color: rgb(185, 107, 120);
+  color: rgb(185, 107, 120);
+}
+
 .tag-button .pressed{
-  color: white;
+  color: white!important;
 }
-
-.tag-button .game.pressed{
-  background-color: green;
-}
-
-.tag-button .web-design.pressed{
-  background-color: teal;
-}
-
-.tag-button .research.pressed{
-  background-color: navy;
-}
-
 
 /* art.html page */
 .gallery{
