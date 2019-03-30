@@ -13,23 +13,35 @@
 <body>
   <!--insert header-->
   <header>
-      <div class="nav-wrapper">
-        <div class="navigation">
-          <a href="index.html" title="Home"><div class="nav-button">Home</div></a>
-          <a href="about.html" title="About"><div class="nav-button">About</div></a>
-          <a href="portfolio.html" title="Portfolio"><div class="nav-button">Portfolio</div></a>
-          <a href="art.html" title="Art"><div class="nav-button">Art</div></a>
-          <a href="activities.html" title="Activities"><div class="nav-button">Activities</div></a>
-          <!--might add activities tab just to let ppl know how hardworking I've been-->
-          <a href="CV.pdf" target="_blank" title="CV"><div class="nav-button">CV</div></a>
-        </div>
+    <div class="nav-wrapper">
+      <div class="navigation">
+        <a href="index.html" title="Home">
+          <div class="nav-button">Home</div>
+        </a>
+        <a href="about.html" title="About">
+          <div class="nav-button">About</div>
+        </a>
+        <a href="portfolio.html" title="Portfolio">
+          <div class="nav-button">Portfolio</div>
+        </a>
+        <a href="art.html" title="Art">
+          <div class="nav-button">Art</div>
+        </a>
+        <a href="activities.html" title="Activities">
+          <div class="nav-button">Activities</div>
+        </a>
+        <!--might add activities tab just to let ppl know how hardworking I've been-->
+        <a href="CV.pdf" target="_blank" title="CV">
+          <div class="nav-button">CV</div>
+        </a>
       </div>
-    </header>
+    </div>
+  </header>
 
   <main>
     <div class="intro-message" id="portfolio">
       <p>I have worked in various projects in the past, the fields ranging from Game Development to
-        Machine Learning Research. This is an iteniary of the projects that I've worked on.</br>
+        Machine Learning Research. This is an iteniary of the projects that I've worked on.</br> </br>
         Click on each item to view a detailed description of each project.
       </p>
     </div>
@@ -55,32 +67,72 @@
       <div class="container-type">Currently Working On</div>
       <div id="current" class="sub-container">
 
-        <div class="item-wrapper game front-end research">
+        <div class="item-wrapper game front-end research" id="miro" onclick="toggleDesc(this.id)">
+          <div class="item">
+            <div class="image" style="background-image: url('images/portfolio/miro.png')">
+              <!---image-->
+            </div>
+            <div class="text-container">
+              <div class="title">The Implementation of MiRO, </br>a Media-as-Place Computer Game</div>
+
+              <div class="description"> Here, we present the idea of media-as-place, as opposed to media as
+                representation, with an interactive computer game MiRO. (DIS 2019 Works In Progress
+                Acceptance)</div>
+              <div class="tag-container">
+                <div class="tag-item game">game-dev</div>
+                <div class="tag-item front-end">front-end</div>
+                <div class="tag-item research">research</div>
+              </div>
+            </div>
+
+            <div class="long-description">Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a
+              very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very
+              long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long
+              text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text
+              for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for
+              this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this
+              Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this
+              Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="item-wrapper game pixel-art" id="secretcat" onclick="toggleDesc(this.id)">
             <div class="item">
-              <div class="image" style="background-image: url('images/portfolio/miro.png')">
-                <!---image-->
+              <div class="image" style="background-image: url('images/portfolio/secretcat.png')">
               </div>
               <div class="text-container">
-                <div class="title">The Implementation of MiRO, </br>a Media-as-Place Computer Game</div>
+                <div class="title">SecretCat</div>
   
-                <div class="description"> Here, we present the idea of media-as-place, as opposed to media as representation, with an interactive computer game MiRO. (DIS 2019 Works In Progress
-                  Acceptance)</div>
+                <div class="description"> Creating a cute cat game.</div>
                 <div class="tag-container">
                   <div class="tag-item game">game-dev</div>
-                  <div class="tag-item front-end">front-end</div>
-                  <div class="tag-item research">research</div>
+                  <div class="tag-item pixel-art">pixel-art</div>
                 </div>
               </div>
   
+              <div class="long-description">Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a
+                very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very
+                long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long
+                text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text
+                for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for
+                this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this
+                Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this
+                Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this
+              </div>
   
             </div>
           </div>
+
+
       </div>
 
       <div class="container-type">Past Projects</div>
       <div id="past" class="sub-container">
 
-        <div class="item-wrapper front-end application" id="divein" onclick="toggleDesc(this.id)">
+        <div class="item-wrapper front-end" id="divein" onclick="toggleDesc(this.id)">
           <div class="item">
             <div class="image" style="background-image: url('images/portfolio/divein.png')">
               <!---image-->
@@ -90,11 +142,10 @@
                   href="https://store.whale.naver.com/detail/albadkjhneheghaepimgfijhdholmbdg" target="blank"
                   title="Whale Store">view in store</a></div>
 
-              <div class="description"> Simple tree visualization of browser tab hierarchies. Developed to ensure
+              <div class="description"> A browser extension using a simple tree visualization of browser tab hierarchies. Developed to ensure
                 organized, clean browser experience (2018 Naver Whale Extension Contest, 3rd Place)</div>
               <div class="tag-container">
                 <div class="tag-item front-end">front-end</div>
-                <div class="tag-item application">application</div>
               </div>
             </div>
 
@@ -110,7 +161,7 @@
           </div>
         </div>
 
-        <div class="item-wrapper game pixel-art">
+        <div class="item-wrapper game pixel-art" id="orbeat" onclick="toggleDesc(this.id)">
           <div class="item">
             <div class="image" style="background-image: url('images/portfolio/newsims.png')">
               <!---image-->
@@ -127,10 +178,27 @@
                 <div class="tag-item pixel-art">pixel-art</div>
               </div>
             </div>
+
+            <div class="long-description">Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need
+              a
+              very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a
+              very
+              long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very
+              long
+              text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long
+              text
+              for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text
+              for
+              this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for
+              this
+              Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this
+              Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this
+            </div>
+
           </div>
         </div>
 
-        <div class="item-wrapper research datavis">
+        <div class="item-wrapper research datavis" id="snubg" onclick="toggleDesc(this.id)">
           <div class="item">
             <div class="image" style="background-image: url('images/portfolio/snubg.png')">
             </div>
@@ -143,12 +211,28 @@
                 <div class="tag-item research">research</div>
                 <div class="tag-item datavis">data-vis</div>
               </div>
-
             </div>
+
+            <div class="long-description">Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need
+              a
+              very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a
+              very
+              long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very
+              long
+              text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long
+              text
+              for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text
+              for
+              this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for
+              this
+              Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this
+              Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this
+            </div>
+
           </div>
         </div>
 
-        <div class="item-wrapper game pixel-art">
+        <div class="item-wrapper game pixel-art" id="newsims" onclick="toggleDesc(this.id)">
           <div class="item">
             <div class="image" style="background-image: url('images/portfolio/newsims.png')">
               <!---image-->
@@ -163,6 +247,22 @@
                 <div class="tag-item game">game-dev</div>
                 <div class="tag-item pixel-art">pixel-art</div>
               </div>
+            </div>
+
+            <div class="long-description">Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need
+              a
+              very long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a
+              very
+              long text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very
+              long
+              text for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long
+              text
+              for this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text
+              for
+              this Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for
+              this
+              Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this
+              Lorem ipsum dolor I need a very long text for this Lorem ipsum dolor I need a very long text for this
             </div>
           </div>
         </div>
