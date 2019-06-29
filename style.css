@@ -237,7 +237,7 @@ h2{
   margin-left: 15px;
 }
 
-.tag-button button{
+#tag-button button{
   min-width: 50px;
   width: fit-content;
   height:40px;
@@ -290,17 +290,15 @@ h2{
 }
 
 .item-wrapper{
-  width: 490px;
+  width: 100%;
   height: fit-content;
 }
 
 .portfolio-container .item{
-  width: 460px;
-  height: auto;
-  margin: 14px 15px;
-  float: left;
+  width: 80%;
+  min-height: 170px;
+  margin: 14px auto;
   display: flex;
-  flex-wrap: wrap;
   background-color: rgb(241, 241, 241);
   border-radius: 2px;
   box-shadow: 0 1px 7px #121212;
@@ -324,11 +322,12 @@ h2{
 .portfolio-container .item .image{
   width: 120px;
   height: 120px;
-  margin: 15px;
+  margin: 25px 15px;
   background-color: white;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border: 1px solid darkslategray;
 }
 
 .item-link{
@@ -338,23 +337,27 @@ h2{
 }
 
 .portfolio-container .item .text-container{
-  margin-top: 15px;
-  width: 300px;
+  margin: 15px auto 0;
+  padding-right: 15px;
+  width: 80%;
 }
 
 .text-container .title{
   font-family: 'NSExtraBold';
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .text-container .description{
-  font-size: 14px;
-  font-family: 'NSLight';
+  font-size: 15px;
+  font-family: 'NSRegular';
   margin-top: 3px;
 }
 
 .tag-container {
   display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  width: fit-content;
 }
 
 .tag-container .tag-item{
@@ -368,84 +371,10 @@ h2{
   font-family: 'NSExtrabold';
 }
 
-.long-description{
-  font-size: 14px;
-  width: 490px;
-  margin: 0 15px;
-
-  max-height: 0px;
-  overflow: hidden;
-  transition: max-height 0.5s ease-out, padding 0.5s;
-}
-
-.long-description.visible{
-  max-height: 400px; /*modify as necessary*/
-  padding-bottom: 15px;
-  transition: max-height 0.5s ease-in-out, padding 0.5s;
-}
-
 /* tag-item styling */
 
 .tag-item{
   color:white
-}
-
-.tag-item.game,
-.tag-button #game.pressed{
-  background-color: green;
-}
-
-.tag-item.front-end,
-.tag-button #front-end.pressed{
-  background-color: teal;
-}
-
-.tag-item.research,
-.tag-button #research.pressed{
-  background-color: navy;
-}
-
-.tag-item.datavis,
-.tag-button #datavis.pressed{
-  background-color: orange;
-}
-
-.tag-item.pixel-art,
-.tag-button #pixel-art.pressed{
-  background-color: rgb(185, 107, 120);
-}
-
-.tag-button *{
-  border: 3px solid;
-}
-
-.tag-button #game{
-  border-color:green;
-  color: green;
-}
-
-.tag-button #front-end{
-  border-color: teal;
-  color: teal;
-}
-
-.tag-button #research{
-  border-color: navy;
-  color: navy;
-}
-
-.tag-button #datavis{
-  border-color: orange;
-  color: orange;
-}
-
-.tag-button #pixel-art{
-  border-color: rgb(185, 107, 120);
-  color: rgb(185, 107, 120);
-}
-
-.tag-button .pressed{
-  color: white!important;
 }
 
 /* art.html page */

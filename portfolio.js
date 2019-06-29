@@ -53,6 +53,7 @@ function includes(item, array) {
 /* portfolio tag filtering */
 
 var select_pool = document.getElementsByClassName('item-wrapper');
+var buttonContainer = document.getElementById('tag-button');
 
 //iterate over all existing tags in portfoliotags.js
 
@@ -60,6 +61,14 @@ for (let k = 0; k < tags.length; k++) {
     let tempColor = tags[k].color;
     let tempTag = tags[k].tag;
     let tempText = tags[k].text;
+
+    //create the buttons
+
+    let tagButton = document.createElement('button');
+    tagButton.className = "tag";
+    tagButton.id = tempTag;
+    tagButton.innerHTML = tempText;
+    buttonContainer.appendChild(tagButton);
 
     //create the tags by the classes on the wrapper
 
@@ -74,7 +83,6 @@ for (let k = 0; k < tags.length; k++) {
     }
 
     let tagsToColor = document.querySelectorAll('.tag-item.'+tempTag);
-    let tagButton = document.getElementById(tempTag);
 
     tagButton.style.borderColor = tempColor;
     tagButton.style.color = tempColor;
