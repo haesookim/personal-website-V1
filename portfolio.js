@@ -45,11 +45,6 @@ function createItem(title, imageSource, description, tagString) {
 
 /* collect and coloring the tags */
 
-var tagButtonList = [];
-
-function addTag(tagString) {
-}
-
 function includes(item, array) {
     return (array.indexOf(item) != -1);
 }
@@ -57,38 +52,71 @@ function includes(item, array) {
 
 /* portfolio tag filtering */
 
-function toggleButton(btnName) {
-    let button = document.getElementById(btnName);
+var select_pool = document.getElementsByClassName('item-wrapper');
 
-    button.classList.toggle("pressed");
+//iterate over all existing tags in portfoliotags.js
+
+for (let k = 0; k < tags.length; k++) {
+    let tempColor = tags[k].color;
+    let tempTag = tags[k].tag;
+    let tempText = tags[k].text;
+
+    //create the tags by the classes on the wrapper
+
+    let toTag = document.querySelectorAll('.item-wrapper.'+tempTag);
+    for (let i = 0; i < toTag.length ; i++){
+        let tagItem = document.createElement('div');
+        tagItem.innerHTML = tempText;
+        tagItem.className = ('tag-item '+tempTag);
+        let container = toTag[i].querySelector('.tag-container')
+        container.append(tagItem);
+        console.log(tagItem);
+    }
+
+    let tagsToColor = document.querySelectorAll('.tag-item.'+tempTag);
+    let tagButton = document.getElementById(tempTag);
+
+    tagButton.style.borderColor = tempColor;
+    tagButton.style.color = tempColor;
+
+    for (let j = 0; j < tagsToColor.length; j++) {
+        tagsToColor[j].style.backgroundColor = tempColor;
+    }
+
+    tagButton.addEventListener("click", function () {
+        filterSelection(this.id);
+        this.classList.toggle('pressed');
+
+        if (includes('pressed', this.className.split(" "))) {
+            this.style.backgroundColor = tempColor;
+            this.style.color = 'white';
+        } else{
+            this.style.borderColor = tempColor;
+            this.style.color = tempColor;
+            this.style.backgroundColor = 'transparent';
+        }
+    });
 }
 
-var select_pool = document.getElementsByClassName('item-wrapper');
+for (let i = 0; i < select_pool.length; i++) {
+    //select_pool[i].addEventListener
+}
 
 function filterSelection(tag) {
 
     let button = document.getElementById(tag);
     let classArray = button.className.split(" ");
     let allButtons = document.getElementsByClassName("pressed");
-    console.log(allButtons);
 
     if (includes("pressed", classArray)) {
         showAll(select_pool);
-        /* Reserve this for when I'm flipping them
-        
-        for (i = 0; i < select_pool.length; i++) {
-            if (select_pool[i].className.indexOf(tag) > -1) {
-                hideSelection(select_pool[i]);
-            }
-        }*/
-        /* remove filter */
     } else {
         if (tag == "all") {
             showAll(select_pool);
             return;
         }
 
-        for (let i = 0; i< allButtons.length; i++){
+        for (let i = 0; i < allButtons.length; i++) {
             allButtons[i].classList.toggle("pressed");
         }
 
@@ -100,7 +128,6 @@ function filterSelection(tag) {
             }
         }
     }
-    toggleButton(tag);
 }
 
 function showAll(select_pool) {
@@ -144,17 +171,9 @@ function hideSelection(item) {
     }
 }
 
-function toggleDesc(id){
-    let parent = document.querySelector("#"+id);
-    let desc = parent.querySelector(".long-description");
-
-    desc.classList.toggle("visible");
-    console.log(desc.innerHTML);
-}
-
 /* Searching for items */
 
-function searchFunction(){
+function searchFunction() {
     let input = getElementById("search-input");
 
     //fix this part as fit
