@@ -320,9 +320,9 @@ h2{
 }
 
 .portfolio-container .item .image{
-  width: 120px;
-  height: 120px;
-  margin: 25px 15px;
+  width: 150px;
+  height: 150px;
+  margin: 15px;
   background-color: white;
   background-size: cover;
   background-repeat: no-repeat;
@@ -331,7 +331,7 @@ h2{
 }
 
 .item-link{
-  font-size: 10px;
+  font-size: 13px;
   font-family: 'NSRegular';
   margin-left: 3px;
 }
