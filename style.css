@@ -70,7 +70,13 @@ main{
   position: static;
   display: block;
   margin: 0 auto;
-  width: 70%;
+  width: 80%;
+}
+
+@media (max-width: 768px){
+  main{
+    width: 90%;
+  }
 }
 
 /*introbox*/
@@ -237,6 +243,10 @@ h2{
   margin-left: 15px;
 }
 
+#tag-button{
+  justify-content: center;
+}
+
 #tag-button button{
   min-width: 50px;
   width: fit-content;
@@ -295,7 +305,7 @@ h2{
 }
 
 .portfolio-container .item{
-  width: 80%;
+  width: 90%;
   min-height: 170px;
   margin: 14px auto;
   display: flex;
@@ -330,6 +340,36 @@ h2{
   border: 1px solid darkslategray;
 }
 
+/* Styling items responsively */
+
+@media (max-width: 768px){
+  .item-wrapper{
+    padding: 15px;
+  }
+  
+  .portfolio-container .item{
+    width: 90%;
+    min-height: 170px;
+    padding-top: 15px;
+    height: fit-content;
+    display: block;
+    background-color: rgb(241, 241, 241);
+    border-radius: 2px;
+    box-shadow: 0 1px 7px #121212;
+  }
+  
+  .portfolio-container .item .image{
+    width: 90%;
+    height: 60vw;
+    margin: 15px auto;
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid darkslategray;
+  }
+}
+
 .item-link{
   font-size: 13px;
   font-family: 'NSRegular';
@@ -337,14 +377,15 @@ h2{
 }
 
 .portfolio-container .item .text-container{
-  margin: 15px auto 0;
+  margin: 15px auto;
   padding-right: 15px;
   width: 80%;
 }
 
 .text-container .title{
   font-family: 'NSExtraBold';
-  font-size: 18px;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .text-container .description{
@@ -355,7 +396,7 @@ h2{
 
 .tag-container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   overflow: scroll;
   width: fit-content;
 }
