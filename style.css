@@ -245,6 +245,8 @@ h2{
 
 #tag-button{
   justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #tag-button button{
@@ -391,7 +393,7 @@ h2{
 .text-container .description{
   font-size: 15px;
   font-family: 'NSRegular';
-  margin-top: 3px;
+  margin: 3px 0px 10px;
 }
 
 .tag-container {
