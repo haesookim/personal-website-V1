@@ -1,49 +1,54 @@
 <!doctype html>
 
 <head>
-  <title>Haesoo Heather Kim :: Portfolio</title>
-  <meta charset="utf-8" />
+  <title>Haesoo Kim :: Main</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="description" content="Personal Website">
   <link href="style.css" type="text/css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Hind:700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <link rel="icon" type="image/png" href="images/favicon_logo.png">
 </head>
 
 <body>
-  <!--insert header-->
   <header>
     <div class="nav-wrapper">
-      <div class="navigation">
+      <nav>
         <a href="index.html" title="Home">
-          <div class="nav-button">Home</div>
+          <div class="nav-button" id="home-button">Home</div>
         </a>
-        <a href="about.html" title="About">
+        <!--a href="about.html" title="About">
           <div class="nav-button">About</div>
+        </a-->
+        <a href="portfolio.html" title="Projects">
+          <div class="nav-button">Projects</div>
         </a>
-        <a href="portfolio.html" title="Portfolio">
-          <div class="nav-button">Portfolio</div>
-        </a>
-        <a href="art.html" title="Art">
+        <!--<a href="art.html" title="Art">
           <div class="nav-button">Art</div>
         </a>
         <a href="activities.html" title="Activities">
           <div class="nav-button">Activities</div>
         </a>
-        <!--might add activities tab just to let ppl know how hardworking I've been-->
-        <a href="CV.pdf" target="_blank" title="CV">
+        might add activities tab just to let ppl know how hardworking I've been-->
+        <a href="files/CV.pdf" target="_blank" title="CV">
           <div class="nav-button">CV</div>
         </a>
-      </div>
+      </nav>
     </div>
   </header>
 
+
   <main>
-    <div class="intro-message" id="portfolio">
-      <p>I have worked in various projects in the past, the fields ranging from Game Development to
-        Machine Learning Research. This is an iteniary of the projects that I've worked on.</br> </br>
-        Click on each item to view a detailed description of each project.
-      </p>
+    <div class="intro">
+      <h1>Portfolio</h1>
+      <h2>Stuff that I've been working on</h2>
+
+      <div class="intro-message" id="portfolio">
+        <p>I have worked in various projects in the past, the fields ranging from Game Development to
+          Social Computing Research. This is an iteniary of the projects that I've worked on.</p>
+        <p>Click on the tags to filter projects by category.</p>
+      </div>
     </div>
 
     <div class="button-container">
@@ -91,13 +96,14 @@
 
         <div class="item-wrapper research front-end social-change datavis back-end">
           <div class="item">
-            <div class="image"
-              style="background-image: url(); background-position-x: right;">
+            <div class="image" style="background-image: url(); background-position-x: right;">
             </div>
             <div class="text-container">
-              <div class="title">Developing solutions to reduce radicalization and polarization in online discussions</div>
+              <div class="title">Developing solutions to reduce radicalization and polarization in online discussions
+              </div>
 
-              <div class="description"> KIXLab Internship research project. (with Hyunwoo Kim, supported by SBS D Forum Team)</div>
+              <div class="description"> KIXLab Internship research project. (with Hyunwoo Kim, supported by SBS D Forum
+                Team)</div>
               <div class="tag-container">
               </div>
             </div>
@@ -125,16 +131,19 @@
       <div id="past" class="sub-container">
 
         <div class="item-wrapper front-end datavis">
-            <div class="item">
-              <div class="image" style="background-image: url('images/portfolio/orbeat.jpg')"></div>
-              <div class="text-container">
-                <div class="title">SBD: Measuring the Pshycological Distance of coming to SNU</div>
-                <div class="description">What are the elements that factor into how horrible the traffic is to school? How hard is it for everyone to come to school? How far exactly is SNU from everyone's homes? Through this interactive visualization, one can experience the comparison and a more realistic view of how hard coming to school is.</div>
-                <div class="tag-container">
-                </div>
+          <div class="item">
+            <div class="image" style="background-image: url('images/portfolio/orbeat.jpg')"></div>
+            <div class="text-container">
+              <div class="title">SBD: Measuring the Pshycological Distance of coming to SNU</div>
+              <div class="description">What are the elements that factor into how horrible the traffic is to school? How
+                hard is it for everyone to come to school? How far exactly is SNU from everyone's homes? Through this
+                interactive visualization, one can experience the comparison and a more realistic view of how hard
+                coming to school is.</div>
+              <div class="tag-container">
               </div>
             </div>
           </div>
+        </div>
 
         <div class="item-wrapper front-end back-end">
           <div class="item">
@@ -241,7 +250,22 @@
       </div>
     </div>
   </main>
-  
+
+  <div class="footer">
+    <div class="contact">
+      <div class="contact-item" id="facebook">
+        <a href="https://facebook.com/haesoosk" target="blank"><i class="fa fab fa-facebook"></i></a>
+      </div>
+      <div class="contact-item" id="github">
+        <a href="https://github.com/haesookim" target="blank"><i class="fa fab fa-github"></i></a>
+      </div>
+      <div class="contact-item" id="twitter">
+        <a href="https://twitter.com/haesooheatherk" target="blank"><i class="fa fab fa-twitter"></i></a>
+      </div>
+    </div>
+
+    &copy; Haesoo Kim 2019
+  </div>
   <script type="text/javascript" src="portfolio.js"></script>
   <!--insert footer-->
 </body>
