@@ -104,16 +104,6 @@ for (let k = 0; k < tags.length; k++) {
     }
 
     tagButton.addEventListener("click", function () {
-        let prevPressed = document.querySelector('.pressed');
-        if (prevPressed !== null){
-            prevPressed.classList.toggle('pressed');
-            let prevTempColor = prevPressed.style.backgroundColor;
-
-            prevPressed.style.borderColor = prevTempColor;
-            prevPressed.style.color = prevTempColor;
-            prevPressed.style.backgroundColor = 'transparent';            
-        }
-
         filterSelection(this.id);
         this.classList.toggle('pressed');
 
@@ -121,6 +111,15 @@ for (let k = 0; k < tags.length; k++) {
             this.style.backgroundColor = tempColor;
             this.style.color = 'white';
         } else{
+            let prevPressed = document.querySelector('.pressed');
+            if (prevPressed !== null){
+                prevPressed.classList.toggle('pressed');
+                let prevTempColor = prevPressed.style.backgroundColor;
+
+                prevPressed.style.borderColor = prevTempColor;
+                prevPressed.style.color = prevTempColor;
+                prevPressed.style.backgroundColor = 'transparent';            
+            }
             this.style.borderColor = tempColor;
             this.style.color = tempColor;
             this.style.backgroundColor = 'transparent';
@@ -143,6 +142,15 @@ function filterSelection(tag) {
     } else {
         if (tag == "all") {
             showAll(select_pool);
+            let prevPressed = document.querySelector('.pressed');
+            if (prevPressed !== null){
+                prevPressed.classList.toggle('pressed');
+                let prevTempColor = prevPressed.style.backgroundColor;
+
+                prevPressed.style.borderColor = prevTempColor;
+                prevPressed.style.color = prevTempColor;
+                prevPressed.style.backgroundColor = 'transparent';            
+            }
             return;
         }
 
