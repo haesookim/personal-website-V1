@@ -55,6 +55,18 @@ function includes(item, array) {
 var select_pool = document.getElementsByClassName('item-wrapper');
 var buttonContainer = document.getElementById('tag-button');
 
+// array of tags
+
+var tags = [
+    { tag: "research", text: "Research", color: "navy" }, 
+    { tag: "game", text: "Game Design", color: "green" },
+    { tag: "front-end", text: "Front End", color: "teal" },
+    { tag: "back-end", text: "Back End", color: "brown" },
+    { tag: "social-change", text: "Social Change", color: "purple" },
+    { tag: "pixel-art", text: "Pixel Art", color: "rgb(185, 107, 120)" },
+    { tag: "datavis", text: "Data Visualization", color: "orange" }
+];
+
 //iterate over all existing tags in portfoliotags.js
 
 for (let k = 0; k < tags.length; k++) {
