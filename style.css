@@ -65,7 +65,7 @@ a .nav-button{
   background-color: #00000046;
 }
 
-/*main content*/
+/* main content*/
 main{
   position: static;
   display: block;
@@ -79,10 +79,10 @@ main{
   }
 }
 
-/*introbox*/
+/* Index: introbox */
 
 .intro{
-  margin : 100px auto;
+  margin : 100px auto 50px;
   padding: 0px 30px;
 }
 
@@ -124,23 +124,26 @@ h2{
   padding-top: 15px;
 }
 
-/*index portfolio lists*/
+/* Index: portfolio lists*/
+
+#inner-main{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
 
 .portfolio-list{
-  margin: 30px auto;
+  margin: 30px 5px;
 }
 
 .portfolio-list .title{
   margin: 10px auto;
-  text-align: center;
   color: #424242;
   font-size: 15pt;
-  font-family: 'NSRegular';
+  font-family: 'NSBold';
 }
 
 .portfolio-list .subtitle{
   margin: 10px auto;
-  text-align: center;
   color: #797979;
   font-size: 12pt;
   font-family: 'NSLight';
@@ -154,63 +157,32 @@ h2{
   justify-content: center;
 }
 
-.portfolio-list .abstract .item{
-  height: 200px;
-  width: 200px;
-  border-radius: 100px;
-  margin: 15px;
-  background-color: rgba(0,0,0,0.3);
-  -webkit-transition: background-color 0.6s; /* Safari */
-  transition: background-color 0.6s;
+/* Index: News list*/
+
+.news-item{
+  margin: 10px 0;
 }
 
-.portfolio-list .abstract .item:hover{
-  background-color: rgba(0,0,0,0.8);
-}
-
-.portfolio-list .abstract .item:hover .item-name{
-  display:none;
-}
-
-.portfolio-list .abstract .item:hover .item-description{
-  display:flex;
-}
-
-.portfolio-list .abstract .item .item-name{
-  font-family: "NSRegular";
-  font-size: 24px;
-  color: white;
-  text-align: center;
-  width: fit-content;
-  height: inherit;
-  margin: auto;
+.news-head {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-
-  -webkit-transition: display 0.6s; /* Safari */
-  transition: display 0.6s;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin-bottom: 5px;
 }
 
-.portfolio-list .abstract .item .item-description{
-  font-family: "NSRegular";
+.news-title{
+  font-family: 'NSBold';
   font-size: 18px;
-  padding: 0px 20px;
-  color: white;
-  text-align: center;
-  height: inherit;
-  margin: auto;
-  display: none;
-  justify-content: center;
-  flex-direction: column;
-
-  -webkit-transition: display 0.6s; /* Safari */
-  transition: display 0.6s;
 }
 
-.portfolio-list .abstract .item .item-description a {
-  color: white;
-  text-decoration: none;
+.news-date{
+  font-size: 14px;
+  color: #797979;
+  margin-left: 5px;
+}
+
+.news-desc{
+  margin-left: 10px;
 }
 
 /*footer*/
