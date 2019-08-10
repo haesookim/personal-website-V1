@@ -97,6 +97,11 @@ main{
   line-height: 24px;
 }
 
+a{
+  text-decoration-line: none;
+  text-decoration-color: blue;
+}
+
 h1{
   font-family: 'NSLight';
   margin: 25px auto 10px auto;
@@ -191,7 +196,8 @@ h2{
   padding-bottom: 30px;
   text-align: center;
   font-family: 'NSRegular';
-  font-size: 9pt;
+  font-size: 12pt;
+  color: white;
   background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
 }
 
@@ -207,6 +213,12 @@ h2{
 .contact-item{
   width: 100px;
   text-align: center;
+  font-size: 30px;
+}
+
+.contact-item a{
+  color: white;
+  text-decoration: none;
 }
 
 /*portfolio.html page*/
