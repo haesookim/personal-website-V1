@@ -1,432 +1,430 @@
 @font-face {
-  font-family: 'NSRegular';
-  src: url('./fonts/NanumSquareOTFRegular.otf');
+    font-family: "NSRegular";
+    src: url("./fonts/NanumSquareOTFRegular.otf");
 }
 
 @font-face {
-  font-family: 'NSBold';
-  src: url('./fonts/NanumSquareOTFBold.otf');
+    font-family: "NSBold";
+    src: url("./fonts/NanumSquareOTFBold.otf");
 }
 
 @font-face {
-  font-family: 'NSExtrabold';
-  src: url('./fonts/NanumSquareOTFExtraBold.otf');
+    font-family: "NSExtrabold";
+    src: url("./fonts/NanumSquareOTFExtraBold.otf");
 }
 
 @font-face {
-  font-family: 'NSLight';
-  src: url('./fonts/NanumSquareOTFLight.otf');
+    font-family: "NSLight";
+    src: url("./fonts/NanumSquareOTFLight.otf");
 }
 
-body{
-  background-color: #fff;
-  margin: 0;
-  padding: 0;
-  font-family: "NSRegular";
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: "NSRegular";
 }
 
 /*header and navbar designs*/
 header {
-  overflow: hidden;
-  background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+    overflow: hidden;
+    background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
 }
 
-.nav-wrapper{
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: flex-end;
-  -webkit-transition: background-color 0.6s; /* Safari */
-  transition: background-color 0.6s;
+.nav-wrapper {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    -webkit-transition: background-color 0.6s; /* Safari */
+    transition: background-color 0.6s;
 }
 
-.nav-button{
-  text-align: center;
-  float: left;
-  display: flex;
-  padding : 17px 20px;
+.nav-button {
+    text-align: center;
+    float: left;
+    display: flex;
+    padding: 17px 20px;
 }
 
-a .nav-button{
-  font-size: 14px;
-  text-decoration: none;
-  font-family: 'NSBold';
-  color: #fff;
+a .nav-button {
+    font-size: 14px;
+    text-decoration: none;
+    font-family: "NSBold";
+    color: #fff;
 }
 
 .nav-button:hover {
-  background-color: #00000046;
+    background-color: #00000046;
 }
 
-@media only screen and (max-width: 768px){
-
+@media only screen and (max-width: 768px) {
 }
 
 /* main content*/
-main{
-  position: static;
-  display: block;
-  margin: 0 auto;
-  width: 80%;
+main {
+    position: static;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
 }
 
-@media (max-width: 768px){
-  main{
-    width: 90%;
-  }
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+    }
 }
 
 /* Index: introbox */
 
-.intro{
-  margin : 50px auto;
-  padding: 0px 30px;
+.intro {
+    margin: 50px auto 30px;
+    padding: 0px 30px;
 }
 
-.intro-message{
-  margin: 50px auto;
-  margin-bottom: 0;
-  width: 70%;
-  position: relative;
-  font-family: 'NSRegular';
-  font-size: 17px;
-  text-align: center;
-  line-height: 24px;
+.intro-message {
+    margin: 50px auto;
+    margin-bottom: 0;
+    width: 70%;
+    position: relative;
+    font-family: "NSRegular";
+    font-size: 17px;
+    line-height: 24px;
 }
 
-a{
-  text-decoration-line: none;
-  text-decoration-color: blue;
+a {
+    text-decoration-color: blue;
 }
 
-h1{
-  font-family: 'NSBold';
-  margin: 25px auto 5px auto;
-  text-align: center;
-  font-size: 30px;
+h1 {
+    font-family: "NSBold";
+    margin: 25px auto 5px auto;
+    text-align: center;
+    font-size: 30px;
 }
 
-h1 a{
-  text-decoration: none;
-  color: black;
+h1 a {
+    text-decoration: none;
+    color: black;
 }
 
-h2{
-  font-family: 'NSLight';
-  font-weight: 100;
-  color: #454545;
-  font-size: 17px;
-  text-align: center;
-  border-top: 1px solid #454545;
-  width: fit-content;
-  margin: 15px auto 40px auto;
-  padding-top: 15px;
+h2 {
+    font-family: "NSLight";
+    font-weight: 100;
+    color: #454545;
+    font-size: 17px;
+    text-align: center;
+    border-top: 1px solid #454545;
+    width: fit-content;
+    margin: 15px auto 40px auto;
+    padding-top: 15px;
 }
 
-@media only screen and (max-width: 768px){
-  .intro{
-    padding: 0;
-  }
+@media only screen and (max-width: 768px) {
+    .intro {
+        padding: 0;
+    }
 
-  .intro-message{
-    width: 90%;
-  }
+    .intro-message {
+        width: 90%;
+    }
 }
 
 /* Index: portfolio lists*/
 
-#inner-main{
-  display: grid;
-  grid-template-columns: 50% 50%;
+#inner-main {
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
-.portfolio-list{
-  margin: 30px 5px;
+.portfolio-list {
+    margin: 0px 5px 30px;
 }
 
-.portfolio-list .title{
-  margin: 10px auto;
-  color: #424242;
-  font-size: 15pt;
-  font-family: 'NSBold';
+.portfolio-list .title {
+    margin: 10px auto;
+    color: #424242;
+    font-size: 15pt;
+    font-family: "NSBold";
 }
 
-.portfolio-list .subtitle{
-  margin: 10px auto;
-  color: #797979;
-  font-size: 12pt;
-  font-family: 'NSLight';
+.portfolio-list .subtitle {
+    margin: 10px auto;
+    color: #797979;
+    font-size: 12pt;
+    font-family: "NSLight";
 }
 
-.portfolio-list .abstract{
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%;
-  margin: 0 auto;
-  justify-content: center;
+.portfolio-list .abstract {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 /* Index: News list*/
 
-.news-item{
-  margin: 10px auto;
+.news-item {
+    margin: 10px auto;
 }
 
 .news-head {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  margin-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-bottom: 5px;
 }
 
-.news-title{
-  font-family: 'NSBold';
-  font-size: 18px;
+.news-title {
+    font-family: "NSBold";
+    font-size: 18px;
 }
 
-.news-date{
-  font-size: 14px;
-  color: #797979;
-  margin-left: 5px;
+.news-date {
+    font-size: 14px;
+    color: #797979;
+    margin-left: 5px;
 }
 
-.news-desc{
-  margin-left: 10px;
+.news-desc {
+    margin-left: 10px;
 }
 
-@media only screen and (max-width: 768px){
-  #inner-main{
-    display:block;
-    width: 90%;
-    margin:0 auto;
-  }
+@media only screen and (max-width: 768px) {
+    #inner-main {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
 
-  .news-item{
-    margin: 10px;
-  }
+    .news-item {
+        margin: 10px;
+    }
 }
 
 /*footer*/
 .footer {
-  margin: 50px auto 0 auto;
-  padding-bottom: 30px;
-  text-align: center;
-  font-family: 'NSRegular';
-  font-size: 12pt;
-  color: white;
-  background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+    margin: 50px auto 0 auto;
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: "NSRegular";
+    font-size: 12pt;
+    color: white;
+    background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
 }
 
 /*contact*/
-.contact{
-  margin: 0px auto 30px auto;
-  padding-top: 30px;
-  width: 50%;
-  display: flex;
-  justify-content: center;
+.contact {
+    margin: 0px auto 30px auto;
+    padding-top: 30px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
 }
 
-.contact-item{
-  width: 100px;
-  text-align: center;
-  font-size: 30px;
+.contact-item {
+    width: 100px;
+    text-align: center;
+    font-size: 30px;
 }
 
-.contact-item a{
-  color: white;
-  text-decoration: none;
+.contact-item a {
+    color: white;
+    text-decoration: none;
 }
 
 /*portfolio.html page*/
 
-.button-container{
-  margin-left: 15px;
+.button-container {
+    margin-left: 15px;
 }
 
-#tag-button{
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
+#tag-button {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#tag-button button{
-  min-width: 50px;
-  width: fit-content;
-  height:40px;
-  text-align: center;
-  font-size: 14px;
-  font-family: 'NSExtrabold';
-  padding: 0 15px;
-  margin: 5px;
-  border-radius: 20px;
-  border: solid 3px #121212;
-  color: #121212;
-  box-shadow: 0 2px 5px #565656;
+#tag-button button {
+    min-width: 50px;
+    width: fit-content;
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+    font-family: "NSExtrabold";
+    padding: 0 15px;
+    margin: 5px;
+    border-radius: 20px;
+    border: solid 3px #121212;
+    color: #121212;
+    box-shadow: 0 2px 5px #565656;
 }
 
-.hidden{
-  display: none;
+.hidden {
+    display: none;
 }
 
-.portfolio-container{
-  margin: 15px auto 0 auto;
+.portfolio-container {
+    margin: 15px auto 0 auto;
 }
 
-.container-type{
-  font-style: italic;
-  font-size: 20px;
-  margin: 10px;
+.container-type {
+    font-style: italic;
+    font-size: 20px;
+    margin: 10px;
 }
 
-.sub-container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 15px auto;
+.sub-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 15px auto;
 }
 
-.item-wrapper{
-  width: 100%;
-  height: fit-content;
+.item-wrapper {
+    width: 100%;
+    height: fit-content;
 }
 
-.portfolio-container .item{
-  width: 90%;
-  min-height: 170px;
-  margin: 14px auto;
-  display: flex;
-  background-color: rgb(241, 241, 241);
-  border-radius: 2px;
-  box-shadow: 0 1px 7px #121212;
-
-  -webkit-transition: margin .5s ease-in-out;
-  -moz-transition: margin .5s ease-in-out;
-  -o-transition: margin .5s ease-in-out;
-  transition: margin .5s ease-in-out;
-}
-
-.portfolio-container .item:hover {
-  margin-top: 3px;
-  margin-bottom: 25px;
-
-  -webkit-transition: margin .3s ease-in-out;
-  -moz-transition: margin .3s ease-in-out;
-  -o-transition: margin .3s ease-in-out;
-  transition: margin .3s ease-in-out;
-}
-
-.portfolio-container .item .image{
-  width: 150px;
-  height: 150px;
-  margin: 15px;
-  background-color: white;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 1px solid darkslategray;
-}
-
-.item-link{
-  font-size: 13px;
-  font-family: 'NSRegular';
-  margin-left: 3px;
-}
-
-.portfolio-container .item .text-container{
-  margin: 17px auto;
-  padding-right: 15px;
-  width: 80%;
-}
-
-.text-container .title{
-  font-family: 'NSExtraBold';
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.text-container .description{
-  font-size: 15px;
-  font-family: 'NSRegular';
-  margin: 3px 0px 10px;
-}
-
-.tag-container {
-  display: flex;
-  flex-wrap: wrap;
-  width: fit-content;
-}
-
-.tag-container .tag-item{
-  min-width: 30px;
-  width: fit-content;
-  padding: 4px 10px;
-  margin: 5px 10px 5px 0px ;
-  text-align: center;
-  font-size: 12px;
-  border-radius: 10px;
-  font-family: 'NSExtrabold';
-}
-
-@media (max-width: 600px){
-  .item-wrapper{
-    padding: 10px;
-  }
-  
-  .portfolio-container .item{
+.portfolio-container .item {
     width: 90%;
     min-height: 170px;
-    padding-top: 15px;
-    height: fit-content;
-    display: block;
+    margin: 14px auto;
+    display: flex;
     background-color: rgb(241, 241, 241);
     border-radius: 2px;
     box-shadow: 0 1px 7px #121212;
-  }
-  
-  .portfolio-container .item .image{
-    width: 80%;
-    height: 50vw;
-    margin: 15px auto;
+
+    -webkit-transition: margin 0.5s ease-in-out;
+    -moz-transition: margin 0.5s ease-in-out;
+    -o-transition: margin 0.5s ease-in-out;
+    transition: margin 0.5s ease-in-out;
+}
+
+.portfolio-container .item:hover {
+    margin-top: 3px;
+    margin-bottom: 25px;
+
+    -webkit-transition: margin 0.3s ease-in-out;
+    -moz-transition: margin 0.3s ease-in-out;
+    -o-transition: margin 0.3s ease-in-out;
+    transition: margin 0.3s ease-in-out;
+}
+
+.portfolio-container .item .image {
+    width: 150px;
+    height: 150px;
+    margin: 15px;
     background-color: white;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border: 1px solid darkslategray;
-  }
+}
 
-  .text-container .title{
-    font-family: 'NSExtraBold';
-    font-size: 17px;
+.item-link {
+    font-size: 13px;
+    font-family: "NSRegular";
+    margin-left: 3px;
+    text-decoration: underline;
+}
+
+.portfolio-container .item .text-container {
+    margin: 17px auto;
+    padding-right: 15px;
+    width: 80%;
+}
+
+.text-container .title {
+    font-family: "NSExtraBold";
+    font-size: 20px;
     margin-bottom: 10px;
-  }
+}
 
-  .text-container .description{
+.text-container .description {
     font-size: 15px;
-    font-family: 'NSRegular';
+    font-family: "NSRegular";
     margin: 3px 0px 10px;
-  }
+}
+
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+}
+
+.tag-container .tag-item {
+    min-width: 30px;
+    width: fit-content;
+    padding: 4px 10px;
+    margin: 5px 10px 5px 0px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 10px;
+    font-family: "NSExtrabold";
+}
+
+@media (max-width: 600px) {
+    .item-wrapper {
+        padding: 10px;
+    }
+
+    .portfolio-container .item {
+        width: 90%;
+        min-height: 170px;
+        padding-top: 15px;
+        height: fit-content;
+        display: block;
+        background-color: rgb(241, 241, 241);
+        border-radius: 2px;
+        box-shadow: 0 1px 7px #121212;
+    }
+
+    .portfolio-container .item .image {
+        width: 80%;
+        height: 50vw;
+        margin: 15px auto;
+        background-color: white;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 1px solid darkslategray;
+    }
+
+    .text-container .title {
+        font-family: "NSExtraBold";
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+
+    .text-container .description {
+        font-size: 15px;
+        font-family: "NSRegular";
+        margin: 3px 0px 10px;
+    }
 }
 
 /* tag-item styling */
 
-.tag-item{
-  color:white
+.tag-item {
+    color: white;
 }
 
 /* art.html page */
-.gallery{
-  margin: 30px;
-  width: fit-content;
+.gallery {
+    margin: 30px;
+    width: fit-content;
 }
 
-.gallery-art{
-  display: flex;
-  margin: 5px;
-  float: left;
-  width: 200px;
-  height: 200px;
-  object-fit: contain;
-  image-rendering: pixelated; /*note: this only works on chrome*/
-  padding: 3px;
-  border: 1px solid #121212;
+.gallery-art {
+    display: flex;
+    margin: 5px;
+    float: left;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    image-rendering: pixelated; /*note: this only works on chrome*/
+    padding: 3px;
+    border: 1px solid #121212;
 }
